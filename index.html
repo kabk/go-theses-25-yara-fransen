@@ -1,50 +1,159 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebTypography</title>
-    <!-- Normalize CSS resets defaults to sensible design choices -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@3.0.1/modern-normalize.min.css"
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <!-- meta tags, fill them with website meta infos -->
+    <meta name="description" content="Description of your web page" />
+    <meta
+      name="keywords"
+      content="Keyword 1, Keyword 2, Keyword 3, Keyword 4, Keyword 5 ..."
     />
-    <!-- Normalize Typography CSS resets defaults to sensible design choices -->
-    <link rel="stylesheet" href="assets/css/typography.css" />
-    <!-- My own style -->
-     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Option shift F (auto format) -->
+    <meta
+      name="author"
+      content="Name of the author/owner of the webpage's content"
+    />
+
+    <!-- website title, visible in the browser window and on link sharing -->
+    <title>Yara's thesis</title>
+
+    <!-- links for extensions and dependencies -->
+
+    <!-- css -->
+    <!-- first link your CSS dependences, here is normalize, a CSS 'reset' for cross-browser appearence uniformity -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <!-- you stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css?ver=1.0" />
+
+    <!-- js -->
+    <!-- first link your javascript dependencies, here as an example is Jquery -->
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- your function scripts -->
+    <script type="text/javascript" src="assets/js/script.js?ver=1.0"></script>
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/acr0pub.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/acr0pub.css" />
   </head>
+
   <body>
-    <!-- When you place a dot it creates a div automatically -->
-    <div class="page-wrapper">
-        <header>
-        <h1>
-            Web <span class="kerning">T</span>ypo&shy;graphy
-        </h1>
-        <h2>
-            Web typography basic notions
-        </h2>
-        </header>
-        <main>
-        <h3>
-            Paragraphs
-        </h3>
-        <article>
-            <section>
-                <h4>
-                    Paragraph titling
-                </h4>
-                <!-- Option z is wrapping the text  -->
-                <p class="paragraph-heading leading tracking">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias blanditiis, assumenda earum maxime optio unde velit, doloremque sequi consequuntur distinctio, voluptatum pariatur aspernatur deleniti. Eveniet sunt, voluptate voluptates ullam sint officiis laudantium explicabo minus illum quibusdam voluptatem beatae distinctio! Magnam, officiis? Nobis perferendis doloremque repudiandae voluptas praesentium pariatur excepturi.
-                </p>
-                <p class="indent">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime maiores culpa placeat odio vitae explicabo molestias est quia perferendis? Harum sunt officia quod officiis porro nostrum doloribus modi velit, magni excepturi libero necessitatibus voluptate laboriosam hic labore. Optio magni mollitia cum totam nemo assumenda porro. Odit nulla officia iste quo?
-                </p>
-            </section>
-        </article>
-        </main>
+    <header class="header">
+      <div class="info">
+        <div class="info-element">Yara Fransen</div>
+        <div class="info-element">Royal Academy of Art, The Hague</div>
+        <div class="info-element">Guided by Ilga Minjon</div>
+      </div>
+
+      <div class="thesis-maintitle">
+        Let's talk <br />
+        about Yasmin
+      </div>
+      <div class="thesis-subtitle">
+        (A research into hormonal contraceptives)
+      </div>
+
+      <div class="abstract">
+        <p>
+          This thesis explores and addresses the complex relationship womxn have with hormonal contraceptives (the pill, IUDs, patches and implants). It investigates systemic factors that cause a gap in communication, education and research into the medical products, leaving womxn with a lack of awareness, understanding and knowledge about the physical and mental impacts.
+        </p>
+        <br/>
+        <p>
+          What specifically stands out to me is the brand names of the hormonal contraceptives. By personifying these medical products with female names, such as Yasmin, Mirena, Zarah and Nikki, they seem to evoke the image of a likeable companion. Yet do they meet the expectations of a trusted friend? In this thesis I will compare human experiences, like navigating a friendship, finding a your ‘perfect match’ and the curiosity into relationships to highlight the process of finding a suitable contraceptive and stimulate a more open dialogue. 
+        </p>
+        <br/>
+        <p>
+          My interest in this topic stems from my own experiences with birth control, as well as those of friends and other womxn. Moreover, my interest is fueled by my frustration about the lack of knowledge I have of my own body and the overlooked impacts of these contraceptive products. 
+        </p>
+        <br/>
+        <p>
+          The main sources for my research are Invisible Women by Caroline Criado Perez, This Is Your Brain on Birth Control by Sarah Hill, and The Promises of Happiness by Sara Ahmed. These sources provide valuable insights into gender biases, patriarchal structures and societal expectations.
+        </p>
+      </div>
+
+    </header>
+
+    <div class="content">
+      <!-- webpage content goes here -->
+      <div class="text">
+        <div class="chapter">
+          <h1 id="introduction">Introduction</h1>
+          <p>
+            Hormonal contraceptives, including the pill, hormonal IUDs, patches and implants are the one of the most popular methods womxn<a>&nbsp;1 </a>  use to manage fertility. According to a 2022 study by the United Nations<a>&nbsp;2 </a>, more than 400 million women worldwide make use of them. The introduction of the hormonal contraceptive pill (commonly known as “the pill”) in 1961 has played a vital part in giving womxn autonomy over their own bodies, improved access to education, and more economic independence. As a result, many womxn associate these medical products with a sense of empowerment.
+          </p>
+
+          <p>
+            My experience with hormonal contraceptives started when I was 16 years old. Like many other teenagers, I wanted to protect myself from getting pregnant and, specifically in my case, to improve my acne prone skin. The combined hormonal contraceptive pill, prescribed by my GP, felt like a logical step. Years later, in my twenties, I started hearing stories of friends and other womxn experiencing side effects using hormonal contraceptives – from extreme mood swings to flattened emotions, increased bleeding to long-lasting headaches. It was only then that I began to understand the potential impacts of these products on the mind and body. This realization opened my eyes to an alternative, disempowering reality.
+          </p>
+
+          <p>
+            Since these encounters, I have increasingly questioned myself why I knew – and still know – so little about my own body and the effects of hormonal contraceptives. Not just me, but many womxn are often left underinformed, unsupported or disconnected from their own experiences with these medical products due to the gaps in communication, education and research. 
+          </p>
+
+          <p>
+            In this thesis I explore and address the systemic factors and issues that contribute to the lack of awareness, understanding and critical perspectives on the hormonal contraceptives. By shedding light on these issues and womxn’s complex relationship these products, I wish to contribute to greater awareness and dialogue on the impacts of hormonal contraceptives.
+          </p>
+
+          <h3>
+            <a>&nbsp;1 </a>United Nation Department Economic Social Affairs. “World Family
+            Planning 2022”. www.un.org, New York, United States, United
+            Nations, 2022,
+            www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/files/documents/2023/Feb/undesa_pd_2022_world-family-planning.pdf.
+            <br/><br/>
+            <a>&nbsp;2 </a>Departement Economische Sociale Zaken van de Verenigde Naties. “World Family Planning 2022”. www.un.org, New York, Verenigde Staten, Verenigde Naties, 2022, www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/files/documents/2023/Feb/undesa_pd_2022_world-family-planning.pdf.
+          </h3>
+        </div>
+
+        <div id="chapter1" class="chapter">
+          <h2 id="_chapter-1_">Chapter 1</h2>
+          <h1>
+            The Gender Gap in Medical Research and Contraceptive Realities
+          </h1>
+          <h2 id="subtitle-1">
+            Who are Yasmin, Mirena, Skyla & Kyleena? What do we (not) know about
+            them?
+          </h2>
+          <p>
+            The branding of hormonal contraceptives carries a notable pattern. Many brands of the contraceptive pills and IUDs have female names: Yasmin, Aviane, Kariva, Skyla, Zarah, Camila, Alessa, Lucette, Ashlyna, Yaz, Jolessa, Hailey, Lyza, Nikki, Ocella, Zovia, Mili, Lucette<a>&nbsp;3 </a> – the list goes on. These pills seem to be marketed as likeable companions or friends. The names evoke a sense of familiarity, trustworthiness, competence and warmth – with the last two being associated as a stereotypical female characteristic.<a>&nbsp;4&nbsp;</a>    
+            <br/><br/>
+            This brand naming is no coincidence. It is a marketing strategy designed to create a sense of comfort and subtly suggests that the medical products have no intention of causing any harm. After all we would not associate a product with a brand name as approachable as ‘Yasmin’ to have negative impacts. Yet, there is a difference between the marketed image and its actual effects. Because the reality is that many womxn experience significant side effects on the body and mind using hormonal contraceptives.
+            <br /><br />
+            Most of what womxn know about their own health are probably things they know about men.<a>&nbsp;5 </a> This stems from the fact that in history for years medical education has been focused on the male ‘norm’, based on the assumption that there were no fundamental differences between male and female bodies. Womxn were seen as a smaller version of men, with the only difference being their reproductive organs.<a>&nbsp;6 </a> Although now we know that there are sex differences in every part of the body, even in our cells, the representation of the male body as ‘the human body’ continues to exist. An example of this is given by writer Criado Perez in her book Invisible Women, ‘a 2008 analysis of a range of textbooks recommended by twenty of the ‘most prestigious universities in Europe, the United States and Canada’ revealed that across 16,329 images, male bodies were used three times as often as female bodies to illustrate ‘neutral body parts’’<a>&nbsp;7 </a> In a later research in 2017, analyzing the medical section in large bookshop in London, Criado Perez noticed not much had changed. The covers of books, drawings of features common to both sexes and posters of the human anatomy featured mostly men or it’s body parts. 
+            <br /><br />
+            Apart from the visual underrepresentation, there’s a significant lack of research on the female body. Up until the early 1990s, most of what womxn have been told about their bodies and brains has come from research done almost exclusively on and by men.<a>&nbsp;8 </a>  And still, womxn are very often left underrepresented in medical research. Their bodies, including female animal bodies, are often argued to be too complex, and variable to be study, and therefore too costly. 
+            <br /><br />
+            This is true, the female body is more complex. Womxn’s hormones change cyclically, which requires researchers to take their cycle phase into account. This makes collecting data more challenging. As a result, it takes a lot more time and can triple the amount of money spend on the research.<a>&nbsp;9 </a>  However, I argue that the inclusion of womxn in studies should be the norm and not just be left aside because it’s easier not to do so. Higher costs and increased time requirements do not justify the exclusion of womxn in research, since this can have significant impacts and consequences on their lives.
+            <br /><br />
+            Criado Perez lists lots of examples of medical cases in her book that give a clear inside into the importance of sex-specific information, data and research. One example I found specifically alarming and therefore important to mention, is a review done in 2014 of a database on a cardiac resynchronization device (CRT-D, a more complex kind of pacemaker). This CRT-D is used to correct a delay in the heart’s electrical signals. In this case the trials had treated the male body as the default, with women only making up around 20% of the participants. Because of the low number of women, no significant difference was found after separating the data by sex. However, the review authors found that the data of female bodies was overlooked, which caused the fact that hundreds of women were experiencing avoidable heart failure.<a>&nbsp;10 </a>  This points out the need for sex-specific research, since it can mean the difference between life and death.
+            <br /><br />
+            The lack of research, information and knowledge about the female body has provided an environment where the introduction of hormonal contraceptives has gone largely unquestioned, and the impacts and experiences of womxn’s using these products are still overlooked today. Leaving not only womxn but also often doctors short on knowledge about the effects of these medical products. This causes them to very often be misunderstood, mistreated and misdiagnosed.<a>&nbsp;11 </a>  To conclude, researcher Sarah Hill states in her book This is your brain on Birth Control “When more females are studied, female-specific health issues-including the birth control pill-will also be studied.”<a>&nbsp;12&nbsp;</a> 
+          </p>
+          <h3>
+            <a>&nbsp;3 </a>Holland, Kimberly. “Birth Control Brands: How to Choose What’s Right for You.” Healthline, www.healthline.com/health/birth-control/birth-control-pill-brands.
+            <br/><br/>
+            <a>&nbsp;4 </a>https://kellercenter.hankamer.baylor.edu/news/story/2022/power-feminine-brand-name
+            <br/><br/>
+            <a>&nbsp;5 </a>Hill, Sarah E. This Is Your Brain on Birth Control: How the Pill Changes Everything. Avery, 2019, p. 215
+            <br/><br/>
+            <a>&nbsp;6 </a>Hill, Sarah E. This Is Your Brain on Birth Control: How the Pill Changes Everything. Avery, 2019, p. 225
+            <br/><br/>
+            <a>&nbsp;7 </a>Criado Perez, Caroline. Invisible Women: Exposing Data Bias in a World Designed for Men, 2019, p.197
+            <br/><br/>
+            <a>&nbsp;8 </a>Hill, Sarah E. This Is Your Brain on Birth Control: How the Pill Changes Everything. Avery, 2019, p. 214
+            <br/><br/>
+            <a>&nbsp;9 </a>Hill, Sarah E. This Is Your Brain on Birth Control: How the Pill Changes Everything. Avery, 2019, p. 220
+            <br/><br/>
+            <a>&nbsp;10 </a>Criado Perez, Caroline. Invisible Women: Exposing Data Bias in a World Designed for Men, 2019, p. 209
+            <br/><br/>
+            <a>&nbsp;11 </a>Criado Perez, Caroline. Invisible Women: Exposing Data Bias in a World Designed for Men, 2019, p.196
+            <br/><br/>
+            <a>&nbsp;12 </a>Hill, Sarah E. This Is Your Brain on Birth Control: How the Pill Changes Everything. Avery, 2019, p. 226
+            <br/><br/>
+            
+            
+          </h3>
+        </div>
+        
+      </div>
     </div>
   </body>
 </html>
