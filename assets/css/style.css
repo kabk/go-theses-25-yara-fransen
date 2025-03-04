@@ -154,8 +154,8 @@ main {
 }
 
 p {
-  font-size: max(0.8rem, 2vw);
-  line-height: 130%;
+  font-size: max(0.8rem, 1.2vw);
+  line-height: 135%;
   font-family: "ibm-plex-serif", sans-serif;
   text-align: justify;
   hyphens: auto;
@@ -531,7 +531,7 @@ p {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 h5 {
