@@ -89,7 +89,7 @@ main {
   margin: 2.5rem auto; 
   padding: 0rem; 
   text-align: center; 
-  border: 0.2vw solid var(--color-accent); 
+  border: 0.25vw solid var(--color-accent); 
   border-radius: 2.75rem; 
   font-family: "acumin-pro-condensed", sans-serif;
   font-weight: 400;
@@ -154,7 +154,7 @@ main {
 }
 
 p {
-  font-size: max(0.9rem, 1.2vw);
+  font-size: max(0.8rem, 2vw);
   line-height: 130%;
   font-family: "ibm-plex-serif", sans-serif;
   text-align: justify;
@@ -163,8 +163,8 @@ p {
 }
 
 h1 {
-  font-family: "acumin-pro" ;
-  font-size: max(1.8rem, 11.5vw);
+  font-family: "acumin-pro", sans-serif;
+  font-size: 11.2vw;
   line-height: 70%;
   font-weight: 800;
   text-align: center;
@@ -173,15 +173,16 @@ h1 {
 
 h2 {
   font-family: "acumin-pro", sans-serif;
-  font-size: 3rem;
-  line-height: 3.4rem;
+  font-size: max(2rem, 3vw);
+  line-height: 100%;
   margin: 0 0.5rem;
   text-align: center;
+  padding: 1rem;
 }
 
 h3 {
   font-family: "acumin-pro", sans-serif;
-  font-size: max(2rem, 2.2vw);
+  font-size: max(1.5rem, 2.2vw);
   line-height: 105%;
   text-align: center;
   margin: 0;
@@ -198,7 +199,7 @@ h4 {
 }
 
 h5 {
-  font-size: max(1.8rem, 2.3vw);
+  font-size: max(1.4rem, 2.3vw);
   text-align: center;
   font-family: "acumin-pro-condensed", sans-serif;
   font-weight: 400;
@@ -217,7 +218,7 @@ h5 {
 }
 
 p.notes {
-  font-size: max(1.3rem, 1.7vw);
+  font-size: max(1.1rem, 1.7vw);
   text-align: center;
   font-family: "ibm-plex-serif", sans-serif;
   font-style: normal;
@@ -241,7 +242,7 @@ p.notes {
 }
 
 .arrow {
-  font-size: 3rem;
+  font-size: max(2rem, 3vw);
   text-align: center;
   margin-top: 1rem ;
 }
@@ -516,6 +517,10 @@ body {
   text-align: center;
 }
 
+p.notes {
+  padding: 0.5rem;
+  hyphens: none!important;
+}
 
 p {
   margin-left: 2.5rem;
@@ -525,8 +530,12 @@ p {
   hyphens: auto !important;
 }
 
-p.notes {
-  padding: 1rem;
+h1 {
+  font-size: 3.5rem;
+}
+
+h5 {
+  margin: 1rem auto;
 }
 
 
@@ -577,9 +586,10 @@ main {
   overflow-y: visible;
   width: 100%;
   position: relative;
-  margin-top: 90vh;
+  margin-top: 92vh;
   border-radius: 7rem;
   padding: 0.5rem 0;
+  border-radius: 5rem;
 }
   
 .content {
@@ -587,13 +597,21 @@ main {
 }
 
 .bar {
-  margin:  1.75rem auto;
+  margin:  1rem auto;
 }
 
 img {
   width: 50%;
   margin: auto;
   align-items: center;
+}
+
+.arrow {
+  margin-top: 0.3rem;
+}
+
+.background {
+  border-radius: 3rem;
 }
   
 }
