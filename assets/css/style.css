@@ -158,8 +158,8 @@ p {
   line-height: 130%;
   font-family: "ibm-plex-serif", sans-serif;
   text-align: justify;
-  margin-bottom: 3rem;
   hyphens: auto;
+  margin-bottom: 4rem;
 }
 
 h1 {
@@ -198,7 +198,7 @@ h4 {
 }
 
 h5 {
-  font-size: max(2rem, 2.8vw);
+  font-size: max(1.8rem, 2.3vw);
   text-align: center;
   font-family: "acumin-pro-condensed", sans-serif;
   font-weight: 400;
@@ -207,18 +207,27 @@ h5 {
   background-color: var(--color-accent);
   border-radius: 50%; 
   padding: 0em 0em 0.1em 0em; 
-  display: inline-block; 
-  width: 25%;
+  /*display: inline-block; */
+  width: 20%;
+}
+
+.note {
+  margin-top: 3rem;
+  margin-bottom: 7rem;
 }
 
 p.notes {
-  font-size: max(1.5rem, 1.8vw);
+  font-size: max(1.3rem, 1.7vw);
   text-align: center;
   font-family: "ibm-plex-serif", sans-serif;
   font-style: normal;
   color: var(--color-accent);
-  margin-bottom: 3rem; 
+  margin-bottom: 2rem; 
   margin-top: 0;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   hyphens: none;
 }
 
@@ -321,14 +330,43 @@ a {
   padding: 0;
 
   font-size: 1em;
-  line-height: 140%;
+  line-height: 170%;
   font-family: "acumin-pro", sans-serif;
 
   list-style-type: none;
 }
 
-.navigation:hover {
-  background-color: yellow;
+.navigation {
+  background: transparent; /* Reset background for non-active links */
+  border-radius: 50%; /* Apply border-radius to all links */
+  padding: 0.5rem 1rem; /* Apply padding to all links */
+  transition: background 0.3s ease, border-radius 0.3s ease, padding 0.3s ease; /* Smooth transition for all properties */
+  position: relative; /* Required for positioning the arrow */
+}
+
+/* Solid yellow background for chapters, abstract, intro, conclusion, and bibliography */
+.navigation.active[href*="chapter-"],
+.navigation.active[href="#abstract-title"],
+.navigation.active[href="#intro"],
+.navigation.active[href="#conclusion"],
+.navigation.active[href="#bibliography"] {
+  background: yellow; /* Solid yellow background */
+
+}
+
+/* Solid blue background for notes */
+.navigation.active[href*="note-"] {
+  background: var(--color-accent); /* Solid blue background */
+}
+
+.navigation:hover::before {
+  content: "▶"; /* Arrow symbol */
+  position: absolute; /* Position the arrow */
+  left: -1.5rem; /* Adjust the position of the arrow */
+  top: 50%; /* Center the arrow vertically */
+  transform: translateY(-50%); /* Center the arrow vertically */
+  font-size: 1.2rem; /* Adjust the size of the arrow */
+  color: black; /* Arrow color */
 }
 
 .sidenote-right{
@@ -407,8 +445,6 @@ a {
   hyphens: auto;
 }
 
-
-
 .arrow-right::before {
   display: inline-block; 
   content: "▶";
@@ -417,14 +453,16 @@ a {
   color: var(--color-text);
 }
 
+.note {
+  border: solid 0.25rem var(--color-accent);
+}
+
 #abstract-title {
   margin-top: 1.5rem;
 }
 
 
-.navigation {
-  transition: background-color 0.5s ease; /* Smooth transition */
-}
+
 
 
 
@@ -466,6 +504,13 @@ a {
   width: 90%; 
 }
 
+.note {
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  width: 85%;
+}
+
 
 body {
   text-align: center;
@@ -475,9 +520,13 @@ body {
 p {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
-  text-align: justify; 
   margin-bottom: 2rem;
-  hyphens: auto;
+  text-align: justify; 
+  hyphens: auto !important;
+}
+
+p.notes {
+  padding: 1rem;
 }
 
 
