@@ -182,7 +182,7 @@ h2 {
 
 h3 {
   font-family: "acumin-pro", sans-serif;
-  font-size: max(1.5rem, 2.2vw);
+  font-size: max(1.3rem, 2.2vw);
   line-height: 105%;
   text-align: center;
   margin: 0;
@@ -512,7 +512,8 @@ a {
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 4rem;
-  width: 85%;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 
@@ -534,7 +535,7 @@ p {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h5 {
