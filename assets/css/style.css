@@ -154,7 +154,7 @@ main {
 }
 
 p {
-  font-size: max(0.8rem, 1.1vw);
+  font-size: max(1rem, 1.1vw);
   line-height: 135%;
   font-family: "ibm-plex-serif", sans-serif;
   text-align: justify;
@@ -249,7 +249,7 @@ p.notes {
 
 
 .footnote-ref p {
-  font-size: max(0.4rem, 0.9vw);
+  font-size: max(0.6rem, 0.9vw);
 }
 
 .figure-ref {
