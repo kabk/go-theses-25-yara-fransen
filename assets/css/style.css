@@ -160,6 +160,7 @@ p {
   text-align: justify;
   hyphens: auto;
   margin-bottom: 4rem;
+  hyphenate-limit-chars: 6 3 3;
 }
 
 h1 {
@@ -245,11 +246,6 @@ p.notes {
   font-size: max(2rem, 3vw);
   text-align: center;
   margin-top: 1rem ;
-}
-
-
-.footnote-ref p {
-  font-size: max(0.6rem, 0.9vw);
 }
 
 .figure-ref {
@@ -535,6 +531,7 @@ p {
   -webkit-hyphens: auto; 
   -moz-hyphens: auto; 
   -ms-hyphens: auto; 
+  hyphenate-limit-chars: 6 3 3;
 }
 
 h1 {
