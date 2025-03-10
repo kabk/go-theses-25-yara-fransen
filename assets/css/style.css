@@ -391,19 +391,20 @@ a {
 }
 
 .footnote-ref {
-  font-family: "acumin-pro", sans-serif;
-  font-size: max(0.8rem, 1vw);
-  border-radius: 100%;
-  width: max(1.2rem, 1.6vw);
-  height: max(1.2rem, 1.6vw);
-  line-height: max(1.2rem, 1.6vw);
-  display: inline-block;
-  text-align: center;
-  background-color: aliceblue;
-  box-shadow: inset 0 0em 0.3em var(--color-accent);
 
-  margin-top: max(-1.2rem, -0.3vw);
-  margin-bottom: max(-1.2rem, -0.3vw);
+    font-family: "acumin-pro", sans-serif;
+    font-size: max(0.8rem, 1vw); 
+    border-radius: 100%; 
+    width: max(1.2rem, 1.6vw); 
+    height: max(1.2rem, 1.6vw); 
+    display: inline-block; 
+    align-items: center; 
+    text-align: center; 
+    background-color: aliceblue;
+    box-shadow: inset 0 0em 0.3em var(--color-accent);
+    margin-top: max(-1.2rem, -0.3vw);
+    margin-bottom: max(-1.2rem, -0.3vw);
+
 }
 
 .footnote-ref:hover {
@@ -522,7 +523,7 @@ p {
 
 
 h1 {
-  font-size: 2.85rem;
+  font-size: 2.8rem;
 }
 
 h5 {
