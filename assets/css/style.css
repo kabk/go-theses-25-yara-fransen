@@ -391,12 +391,10 @@ a {
 }
 
 .footnote-ref {
-
   font-family: "acumin-pro", sans-serif;
   font-size: max(0.8rem, 1vw); 
   border-radius: 100%; 
-  width: max(1.2rem, 1.6vw); 
-  height: max(1.2rem, 1.6vw); 
+  width: max(1.3rem, 1.5vw);  
   display: inline-block; 
   align-items: center; 
   text-align: center; 
@@ -404,7 +402,6 @@ a {
   box-shadow: inset 0 0em 0.3em var(--color-accent);
   margin-top: max(-1.2rem, -0.3vw);
   margin-bottom: max(-1.2rem, -0.3vw);
-
 }
 
 .footnote-ref:hover {
@@ -523,7 +520,7 @@ p {
 
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.7rem;
 }
 
 h5 {
@@ -546,6 +543,8 @@ h5 {
 .footnote-ref {
   display: inline-block; 
   margin-left: 0.25rem;
+  align-items: center; 
+  text-align: center;
 }
 
 
