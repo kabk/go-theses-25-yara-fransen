@@ -52,6 +52,8 @@
   --font-family: "acumin-pro", sans-serif;
   }
 
+/* ELEMENTS */
+
 html {
   font: var(--font-size) var(--font-family);
   color: var(--color-text);
@@ -60,7 +62,45 @@ html {
   padding: 0%;
   scroll-behavior: smooth;
 }
+
+.header {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding: 1rem;
+  box-sizing: border-box;
   
+  background-color: var(--color-accent);
+  color: var(--color-background);
+} 
+
+.header-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  align-content: left;
+  width: 100%;
+  height:100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.info-bar {
+  position:absolute;
+  top: 1rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  display: flex;
+  justify-content: space-between;
+  font-size: max(0.9rem, 1.2vw);
+  z-index: 2;
+  background-color: var(--color-accent);
+  color: var(--color-background);  
+  font-family: "acumin-pro-condensed", sans-serif;
+}
+
 body {
   background-color: var(--color-background);
   font: var(--font-size) var(--font-family);
@@ -68,7 +108,6 @@ body {
   text-align: left;   
   background-color: var(--color-text-link);
 }
-
 
 main {
   background-color: yellow;
@@ -78,23 +117,6 @@ main {
   margin-top: 82vh;
   border-radius: 10rem;
   padding: 1rem 0;
-}
-
-.content {
-  margin-top: 4rem;
-}
-
-.bar {
-  width: 80%; 
-  margin: 2.5rem auto; 
-  padding: 0rem; 
-  text-align: center; 
-  border: 0.25vw solid var(--color-accent); 
-  border-radius: 2.75rem; 
-  font-family: "acumin-pro-condensed", sans-serif;
-  font-weight: 400;
-  font-size: max(1.5rem, 3.5vw);
-  color: var(--color-accent);
 }
 
 .background {
@@ -113,45 +135,51 @@ main {
   gap: 2rem;
 }
 
-        
-.header {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  padding: 1rem;
-  box-sizing: border-box;
-  
-  background-color: var(--color-accent);
-  color: var(--color-background);
-}
-    
-    
-.info-bar {
-  position:absolute;
-  top: 1rem;
-  left: 1rem;
-  width: calc(100% - 2rem);
+.content {
+  grid-column: 2 / 4; 
   display: flex;
-  justify-content: space-between;
-  font-size: max(0.9rem, 1.2vw);
-  z-index: 2;
-  background-color: var(--color-accent);
-  color: var(--color-background);  
-  font-family: "acumin-pro-condensed", sans-serif;
+  flex-direction: column; 
+  width: 100%;
+  margin-top: 4rem;
 }
 
-.header-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  align-content: left;
-  width: 100%;
-  height:100vh;
-  padding: 2rem;
-  box-sizing: border-box;
+.bar {
+  width: 80%; 
+  margin: 2.5rem auto; 
+  padding: 0rem; 
+  text-align: center; 
+  border: 0.25vw solid var(--color-accent); 
+  border-radius: 2.75rem; 
+  font-family: "acumin-pro-condensed", sans-serif;
+  font-weight: 400;
+  font-size: max(1.5rem, 3.5vw);
+  color: var(--color-accent);
 }
+
+.note {
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+  border: solid 0.25rem var(--color-accent);
+}
+
+.figure {
+  display: none;
+  float: right;
+  width: 50%;
+  margin-right: -50%;
+  padding: 1rem;
+  font-size: 0.8em;
+  box-sizing: border-box;
+  line-height: 130%;
+  text-align: left;
+}
+
+.figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* TEXT */
 
 p {
   font-size: max(0.9rem, 1.1vw);
@@ -213,10 +241,24 @@ h5 {
   width: 20%;
 }
 
-.note {
-  margin-top: 3rem;
-  margin-bottom: 7rem;
+.thesis-maintitle {
+  margin-top: 11rem;
 }
+
+.r-circle{
+  font-size: 0.4em;
+  vertical-align: text-top;
+  color: rgb(255, 255, 255);
+}
+    
+.thesis-subtitle {
+  font-size: max(2.5rem, 4vw);
+  text-align: center;
+  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-weight: 400;
+
+}
+
 
 p.notes {
   font-size: max(1rem, 1.7vw);
@@ -233,14 +275,12 @@ p.notes {
   hyphens: none;
 }
 
-#bibiography-text {
-  text-align: left;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
+a {
+  text-decoration: none;
+  color: var(--color-text);
 }
+
+
 
 .arrow {
   font-size: max(2rem, 3vw);
@@ -250,7 +290,7 @@ p.notes {
 
 .figure-ref {
   font-size: max(0.8rem, 0.9vw);
-  border: 0.1vw solid black;
+  border: 0.1vw solid var(--color-text);
   padding-top: -0.3rem;
   padding-left: 0.3rem;
   padding-right: 0.3rem;
@@ -262,16 +302,9 @@ p.notes {
   padding-top: -0.3rem;
 }
 
-a {
-  text-decoration: none;
-  color: var(--color-text);
-}
 
-.r-circle{
-  font-size: 0.4em;
-  vertical-align: text-top;
-  color: rgb(255, 255, 255);
-}
+
+
 
 .yasmin-small {
   font-family: "ibm-plex-serif", sans-serif;
@@ -297,26 +330,6 @@ a {
   display:block;
 }
 
-
-.thesis-maintitle {
-  margin-top: 11rem;
-}
-    
-.thesis-subtitle {
-  font-size: max(2.5rem, 4vw);
-  text-align: center;
-  font-family: "acumin-pro-extra-condensed", sans-serif;
-  font-weight: 400;
-
-}
-
-.content {
-  grid-column: 2 / 4; 
-  display: flex;
-  flex-direction: column; 
-  width: 100%;
-}
-
 .list {
   grid-column: 1 / 2;
   position: sticky;
@@ -334,37 +347,35 @@ a {
 }
 
 .navigation {
-  background: transparent; /* Reset background for non-active links */
-  border-radius: 50%; /* Apply border-radius to all links */
-  padding: 0.5rem 1rem; /* Apply padding to all links */
-  transition: background 0.3s ease, border-radius 0.3s ease, padding 0.3s ease; /* Smooth transition for all properties */
-  position: relative; /* Required for positioning the arrow */
+  background: transparent; 
+  border-radius: 50%; 
+  padding: 0.5rem 1rem; 
+  transition: background 0.3s ease, border-radius 0.3s ease, padding 0.3s ease; 
+  position: relative; 
 }
 
-/* Solid yellow background for chapters, abstract, intro, conclusion, and bibliography */
 .navigation.active[href*="chapter-"],
 .navigation.active[href="#abstract-title"],
 .navigation.active[href="#intro"],
 .navigation.active[href="#conclusion"],
 .navigation.active[href="#bibliography"] {
-  background: yellow; /* Solid yellow background */
+  background: yellow; 
 
 }
 
-/* Solid blue background for notes */
 .navigation.active[href*="note-"] {
-  background: var(--color-accent); /* Solid blue background */
+  background: var(--color-accent); 
   color: white;
 }
 
 .navigation:hover::before {
-  content: "▶"; /* Arrow symbol */
-  position: absolute; /* Position the arrow */
-  left: -1.5rem; /* Adjust the position of the arrow */
-  top: 50%; /* Center the arrow vertically */
-  transform: translateY(-50%); /* Center the arrow vertically */
-  font-size: 1.2rem; /* Adjust the size of the arrow */
-  color: black; /* Arrow color */
+  content: "▶"; 
+  position: absolute; 
+  left: -1.5rem; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  font-size: 1.2rem; 
+  color: var(--color-text); 
 }
 
 .sidenote-right{
@@ -379,24 +390,6 @@ a {
   line-height: 120%;
   text-align: left;
 }
-
-.figure {
-  display: none;
-  float: right;
-  width: 50%;
-  margin-right: -50%;
-  padding: 1rem;
-  font-size: 0.8em;
-  box-sizing: border-box;
-  line-height: 130%;
-  text-align: left;
-}
-
-.figure img {
-  max-width: 100%;
-  height: auto;
-}
-
 
 .figure-ref:hover + .figure {
   display: block;
@@ -421,7 +414,6 @@ a {
   margin-top: max(-1.2rem, -0.3vw);
   margin-bottom: max(-1.2rem, -0.3vw);
 }
-
 
 .footnote-ref:hover {
   background-color: var(--color-background);
@@ -453,16 +445,18 @@ a {
   color: var(--color-text);
 }
 
-.note {
-  border: solid 0.25rem var(--color-accent);
-}
-
 #abstract-title {
   margin-top: 1.5rem;
 }
 
-
-
+#bibiography-text {
+  text-align: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
 
 
 
@@ -611,47 +605,46 @@ main {
 }
 
 .figure {
-  display: none; /* Hide by default */
+  display: none;
   flex-direction: column;
-  align-items: center; /* Center the image and text horizontally */
-  text-align: left; /* Align the text to the left */
-  width: 100%; /* Ensure the container takes full width */
-  margin: 0 auto; /* Center the container */
+  align-items: center; 
+  text-align: left; 
+  width: 100%; 
+  margin: 0 auto; 
 }
 
-/* Show the figure on hover over the figure-ref */
+
 .figure-ref:hover + .figure {
-  display: flex; /* Show the figure */
+  display: flex; 
 }
 
-/* Ensure the image is 50% width and centered */
+
 .figure img {
-  width: 50%; /* Set image width to 50% */
-  margin: 0 auto; /* Center the image horizontally */
+  width: 50%; 
+  margin: 0 auto; 
 }
 
-/* Align the text to the left side of the image */
 .figure .figure-text {
-  width: 50%; /* Match the width of the image */
-  text-align: left; /* Align the text to the left */
-  margin-top: 0.5rem; /* Add some spacing between the image and text */
+  width: 50%; 
+  text-align: left; 
+  margin-top: 0.5rem; 
 }
 
 .navigation {
-  background: transparent; /* Reset background for non-active links */
-  border-radius: 50%; /* Circular border radius */
-  padding: 0.5rem 1rem; /* Adjust padding to fit the background */
-  transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
-  color: var(--color-text); /* Default text color */
+  background: transparent; 
+  border-radius: 50%; 
+  padding: 0.5rem 1rem; 
+  transition: background 0.3s ease, color 0.3s ease;
+  color: var(--color-text); 
 }
 
 .navigation:hover::before {
-  display: none; /* Hide the arrow */
+  display: none;
 }
 
 .sticky-nav {
   position: fixed;
-  top: -100%; /* Hide the bar by default */
+  top: -100%;
   left: 0;
   width: 100%;
   background-color: var(--color-background);
@@ -661,7 +654,7 @@ main {
 }
 
 .sticky-nav.visible {
-  top: 0; /* Bring the bar into view */
+  top: 0;
 }
 
 .sticky-nav .list {
@@ -682,8 +675,8 @@ main {
 }
 
 .navigation[href*="note-"]:hover {
-  background: var(--color-accent); /* Blue background */
-  color: var(--color-background); /* White text */
+  background: var(--color-accent); 
+  color: var(--color-background); 
 }
 
 .navigation[href*="chapter-"]:hover,
@@ -691,23 +684,23 @@ main {
 .navigation[href="#intro"]:hover,
 .navigation[href="#conclusion"]:hover,
 .navigation[href="#bibliography"]:hover {
-  background: yellow; /* Yellow background */
-  color: var(--color-text); /* Black text */
+  background: yellow; 
+  color: var(--color-text); 
 }
 
 .sticky-nav .navigation[href*="note-"]:hover {
-  background: var(--color-accent); /* Blue background */
-  color: var(--color-background); /* White text */
+  background: var(--color-accent); 
+  color: var(--color-background); 
 }
 
-/* Yellow background on hover for chapters, abstract, intro, conclusion, and bibliography (mobile) */
+
 .sticky-nav .navigation[href*="chapter-"]:hover,
 .sticky-nav .navigation[href="#abstract-title"]:hover,
 .sticky-nav .navigation[href="#intro"]:hover,
 .sticky-nav .navigation[href="#conclusion"]:hover,
 .sticky-nav .navigation[href="#bibliography"]:hover {
-  background: yellow; /* Yellow background */
-  color: var(--color-text); /* Black text */
+  background: yellow; 
+  color: var(--color-text); 
 }
 
 .arrow {
