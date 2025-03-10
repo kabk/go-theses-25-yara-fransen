@@ -61,3 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Reset lastScrollTop at the top of the page
   });
 });
+
+window.addEventListener("load", function () {
+  document.getElementById("header").scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the header
+});
