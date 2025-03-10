@@ -503,6 +503,11 @@ body {
   text-align: center;
 }
 
+p.notes {
+  padding: 0.5rem;
+  hyphens: none!important;
+}
+
 p {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
@@ -515,13 +520,9 @@ p {
   hyphenate-limit-chars: 6 3 3;
 }
 
-p.notes {
-  padding: 0.5rem;
-  hyphens: none!important;
-}
 
 h1 {
-  font-size: 2.75rem;
+  font-size: 2.85rem;
 }
 
 h5 {
