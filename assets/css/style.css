@@ -283,10 +283,33 @@ a {
   font-style: italic;
 }
 
+#email-container {
+  text-align: center; 
+  margin-top: 0.5rem; 
+  margin-bottom: 4rem;
+}
+
+#email-container a {
+  font-family: "ibm-plex-serif", sans-serif;
+  color: var(--color-text); 
+  text-decoration: none; 
+  font-size: max(1rem, 1.2vw); 
+  transition: color 0.3s ease; 
+}
+
+#email-container a:hover {
+  color: var(--color-accent); 
+}
+
 .arrow {
   font-size: max(2rem, 3vw);
   text-align: center;
   margin-top: 1rem ;
+}
+
+.arrow-right {
+  margin-left: 0.2rem ;
+  margin-right: 0.2rem ;
 }
 
 .figure-ref {
@@ -429,14 +452,6 @@ a {
   -webkit-hyphens: auto;
   -moz-hyphens: auto;
   hyphens: auto;
-}
-
-.arrow-right::before {
-  display: inline-block; 
-  /*content: "▶&#xFE0E;";*/
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
-  color: var(--color-text);
 }
 
 #abstract-title {
