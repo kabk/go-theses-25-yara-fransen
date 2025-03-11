@@ -728,6 +728,10 @@ main {
 .arrow-right {
   margin-left: 0.2rem;
 }
+
+#email-container {
+  margin-bottom: 2rem;
+}
   
 }
 
