@@ -433,7 +433,7 @@ a {
 
 .arrow-right::before {
   display: inline-block; 
-  content: "▶";
+  content: "▶&#xFE0E;";
   margin-left: 0.2rem;
   margin-right: 0.2rem;
   color: var(--color-text);
@@ -700,15 +700,14 @@ main {
   background: yellow; 
   color: var(--color-text); 
 }
-
+/*
 .arrow {
-  display: none;
   margin-top: 0.3rem;
 }
 
 .arrow-right::before {
   display: none;
-}
+}*/
   
 }
 
